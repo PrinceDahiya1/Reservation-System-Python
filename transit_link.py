@@ -3,8 +3,10 @@ import random as ran
 from tabulate import tabulate
 import os
 
+passwd=input("Enter DB Password: ")
+
 connection = ms.connect(
-    host="127.0.1.1", user="root", password="852456", database="project"
+    host="127.0.1.1", user="root", password=passwd, database="project"
 )
 
 cursor = connection.cursor()
